@@ -1,150 +1,297 @@
 <!DOCTYPE html>
-<html lang="en">
+<html land="en">
     <head>
-        <title>Headphones</title>
         <meta charset="UTF-8">
-        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
-        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crossfire Surplus</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
     </head>
-    <body>
-
+    <body class="bg-dark text-white">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <!-- Header -->
         <header>
-            <div id="header_bar">
-                <a><img src="./images/logo_headphones.png" alt="headphones logo"></a>
-                <nav>
-                    <a>what we do</a>
-                    <a>our results</a>
-                    <a>contact us</a>
-                </nav>
-            </div>
+            <nav id="navbar" class="navbar navbar-expand-md bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start mx-auto" href="#">
+                        <img src="./images/crossfire.png" class="me-2" alt="Bootstrap" width="40" height="40">
+                        Crossfire Surplus Yards
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse ms-md-3 text-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#shop_all">Shop All</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#single_carousel">Ship Types</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#multi_carousel">Popular Models</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main>
 
-            <!-- Main Part -->
-            <div id="main_part">
-                <div id="main_content">
-                    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
-                    <h2>Lorem ipsum dolor set amet lorem ipsum dolor set</h2>
-                    <button>CALL TO ACTION</button>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                        velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                </div>
-            </div>
+        <div class="container-fluid mt-4">
+            <div class="d-flex flex-column flex-xl-row">
+                <!-- Main -->
+                <main class="col-12 col-xl-8 order-1 order-xl-2 ps-xl-3 pe-xl-3">
 
-            <!-- What we do... -->
-            <div id="what_we_do">
-                <div id="what_we_do_container">
-                    <h2>What we do...</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                        nulla pariatur.
-                    </p>
-                </div>
-                <div id="icon_container">
-                    <div class="icon">
-                        <img src="./images/favicon.png">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <!-- Banner -->
+                    <div id="shop_all" class="d-flex justify-content-md-between justify-content-center col-8 mt-3 mb-3 mx-auto">
+                        <div class="d-flex flex-column justify-content-around pe-md-2">
+                            <!-- Title and Subtitle -->
+                            <div class="d-flex flex-column text-center">
+                                <h1>SHOP USED SHIPS</h1>
+                                <h2 class="h5">FROM EVERY MANUFACTURER IN THE GALAXY</h2>
+                            </div>
+                            <div class="d-flex justify-content-between mb-sm-2 mb-lg-0">
+                                <!-- Make Dropdown -->
+                                <div class="dropdown col-6 pe-1">
+                                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="makeDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Make
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="makeDropdown">
+                                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('makeDropdown').textContent = this.textContent">Incom</a></li>
+                                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('makeDropdown').textContent = this.textContent">Sienar</a></li>
+                                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('makeDropdown').textContent = this.textContent">Corellian</a></li>
+                                    </ul>
+                                </div>
+                                <!-- Model Dropdown -->
+                                <div class="dropdown col-6 ps-1">
+                                    <button class="btn btn-secondary dropdown-toggle w-100" type="button" id="modelDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Model
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="modelDropdown">
+                                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('modelDropdown').textContent = this.textContent">Fighter</a></li>
+                                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('modelDropdown').textContent = this.textContent">Shuttle</a></li>
+                                        <li><a class="dropdown-item" href="#" onclick="document.getElementById('modelDropdown').textContent = this.textContent">Freighter</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Search Bar Button -->
+                            <div class="d-flex justify-content-around w-100">
+                                <button class="btn btn-primary w-100 pt-1 pb-1">SHOP ALL SHIPS</button>
+                            </div>
+                        </div>
+                        <div class=" d-none d-md-flex col-md-6 ps-2">
+                            <img src="./images/Rebel_Hangar_DICE.png" class="image-fluid w-100 h-auto">
+                        </div>
                     </div>
-                    <div class="icon">
-                        <img src="./images/favicon.png">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <div class="d-flex justify-content-center align-items-center mt-5">
+                        <h2>Shop by Ship Type</h2>
                     </div>
-                    <div class="icon">
-                        <img src="./images/favicon.png">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <!-- Multi Item Carousel -->
+                    <div id="multi_carousel" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="cards-wrapper d-flex justify-content-center">
+                                    <div class="card ms-1 me-1">
+                                        <img src="./images/Xwing-SWB.webp" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Fighters</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card ms-1 me-1">
+                                        <img src="./images/Corvette_negvv.webp" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Corvettes</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card ms-1 me-1">
+                                        <img src="./images/Ghost-RO.webp" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Freighters</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="cards-wrapper d-flex justify-content-center">
+                                    <div class="card ms-1 me-1">
+                                        <img src="./images/X-34-TGTB.webp" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Speeders</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card ms-1 me-1">
+                                        <img src="./images/BARCspeeder-SWBC39.webp" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Speeder Bikes</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card ms-1 me-1">
+                                        <img src="./images/T-47_Speeder_DICE.webp" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Air Speeders</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#multi_carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#multi_carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="icon">
-                        <img src="./images/favicon.png">
-                        <h5>Lorem ipsum</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+                    <div class="d-flex justify-content-center align-items-center mt-5">
+                        <h2>Popular Models</h2>
                     </div>
-                </div>
-            </div>
-            <div id="results">
-                <div id="results_container">
-                    <h2>Our results speak for themselves</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-                        nulla pariatur.
-                    </p>
-                </div>
-                <div id="percents_container">
-                    <div class="percent">
-                        <h5>+2%</h5>
-                        <p>Lorem ipsum dolor</p>
+
+                    <!-- Single Item Carousel -->
+                    <div id="single_carousel" class="carousel slide text-center mx-auto">
+                        <div class="carousel-inner mt-3">
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="d-flex flex-column justify-content-center align-items-center flex-md-row">
+                                        <div class="col-12 col-md-6 mx-auto">
+                                            <img src="./images/TIE-Fighter-RO-SWCT.webp" class="d-block w-100 mb-3">
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-3 mx-auto">
+                                            <p>The Empire’s standard-issue starfighter, the TIE/LN is fast, maneuverable, and terrifying in large numbers. Lacking shields or hyperdrives, it relies on sheer numbers and superior coordination to overwhelm enemies.</p>
+                                            <p>Prices start at just 25,000 Credits!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="d-flex flex-column justify-content-center align-items-center flex-md-row">
+                                        <div class="col-12 col-md-6 mx-auto">
+                                            <img src="./images/Millennium_Falcon_DICE.webp" class="d-block w-100 mb-3">
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-3 mx-auto">
+                                            <p>The most famous freighter in the galaxy, the YT-1300 is a rugged, highly modifiable Corellian Engineering Corporation (CEC) design. With upgrades, it can outrun Imperial ships, haul valuable cargo, and hold its own in a fight.</p>
+                                            <p>Prices start at just 20,000 Credits!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="d-flex flex-column justify-content-center align-items-center flex-md-row">
+                                        <div class="col-12 col-md-6 mx-auto">
+                                            <img src="./images/A-wing_DICE.webp" class="d-block w-100 mb-3">
+                                        </div>
+                                        <div class="col-12 col-md-6 p-md-3 mx-auto">
+                                            <p>The Rebel Alliance’s answer to Imperial TIEs, the RZ-1 A-wing is blisteringly fast and equipped with powerful laser cannons and concussion missiles. Its speed and agility make it a preferred choice for hit-and-run attacks and reconnaissance missions.</p>
+                                            <p>Prices start at just 90,000 Credits!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#single_carousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next bg-dark" type="button" data-bs-target="#single_carousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="percent">
-                        <h5>+2%</h5>
-                        <p>Lorem ipsum dolor</p>
+
+                    <div id="pit_crew" class="">
+                        <div class="d-flex flex-column justify-content-center text-center">
+                            <h2>Our Pit Crew</h2>
+                            <div class="d-flex flex-wrap justify-content-around mt-3">
+                                <div class="droid bg-secondary">
+                                    <img src="./images/droids/DUM-series_pit_droid.webp">
+                                    <h5>DUM-series Pit Droids</h5>
+                                    <p class="text-black">These small, mechanical droids are essential for pit crew operations, assisting with vehicle repairs and maintenance.</p> 
+                                </div>
+                                <div class="droid bg-secondary">
+                                    <img src="images/droids/GNKpowerdroid-DB.webp">
+                                    <h5>GNK Power Droids</h5>
+                                    <p class="text-black">GNK droids are robust power generators, often used to provide energy in remote locations or as a mobile power supply in various settings.</p> 
+                                </div>
+                                <div class="droid bg-secondary">
+                                    <img src="./images/droids/R5unit-NEGTD.webp">
+                                    <h5>R5-series Astromech</h5>
+                                    <p class="text-black">The R5-series astromech droids are skilled in starship maintenance, assisting pilots with navigation, repairs, and system diagnostics.</p> 
+                                </div>
+                                <div class="droid bg-secondary">
+                                    <img src="./images/droids/WED_Septoid_anh.webp">
+                                    <h5>WED Treadwell Repair Droid</h5>
+                                    <p class="text-black">WED Treadwell droids are versatile repair units, commonly used for maintenance in industrial and mechanical environments, particularly in remote or harsh locations.</p> 
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="percent">
-                        <h5>+2%</h5>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                    <div class="percent">
-                        <h5>+2%</h5>
-                        <p>Lorem ipsum dolor</p>
-                    </div>
-                </div>
+                </main>
+
+                <aside id="aside_left" class="d-flex flex-column text-center justify-content-around mt-3 mb-3 col-12 col-xl-2 ps-xl-1 pe-xl-1 order-2 order-xl-1 border-end border-black">
+                    <h2>Have You Or A Loved One Been Affected By Deathsticks?</h2>
+                    <p>You may be entitled to compensation under the Galactic Health & Safety Act.</p>
+                    <p>Side effects of deathsticks include but are not limited to: memory loss, paranoia, spontaneous limb loss, and an overwhelming desire to rethink your life.</p>
+                    <p><strong>Call now:</strong> <a href="tel:1-800-NO-STIX">1-800-NO-STIX</a></p>
+                    <p><a href="#">Join the Class Action Lawsuit</a></p>
+                </aside>
                 
-                
+                <aside id="aside_right" class="d-flex flex-column text-center justify-content-around mt-3 mb-3 col-12 col-xl-2 ps-xl-1 pe-xl-1 order-3 order-xl-3 border-start border-black">
+                    <h2>Droid Maintenance Special!</h2>
+                    <p>Is your astromech or protocol droid in need of a tune-up? Get <strong>20% off</strong> all droid repair services today!</p>
+                    <p>Our expert technicians can restore your droids to peak performance, whether it's a simple software update or a full hardware overhaul.</p>
+                    <p><strong>Use Code:</strong> <span class="text-warning">DROID20</span></p>
+                    <p><a href="#services" class="btn btn-info">Get Your Droid Fixed</a></p>
+                </aside>
             </div>
-            <div id="contact_us">
-                <h2>Contact Us</h2>
-                <form id="contactForm">
-                    <div class="form_group">
-                        <label for="name">Name</label>
-                        <input type="text"
-                               id="name"
-                               name="name"
-                               placeholder="Name"
-                               required>
-                    </div>
-                    <div class="form_group">
-                        <label for="name">Email</label>
-                        <input type="email"
-                               id="email"
-                               name="email"
-                               placeholder="Email"
-                               required>
-                    </div>
-                    <div class="form_group">
-                        <label for="message">Message</label>
-                        <textarea id="message"
-                                  name="message"
-                                  placeholder="Message"
-                                  rows="1"
-                                  required></textarea>
-                    </div>
-                    <button type="submit"
-                            class="submit_button">Your Message</button>
-                </form>
-            </div>
-        </main>
+        </div>
 
         <!-- Footer -->
-        <footer>
-            <div class="footer_content">
-                <img src="./images/logo_headphones.png" class="footer_logo">
-                <p>&copy;headphones 2020</p>
-                <div>
-                    <a><img src="./images/Facebook.png"></a>
-                    <a><img src="./images/Twitter.png"></a>
-                    <a><img src="./images/Instagram.png"></a>
+        <footer class="bg-body-tertiary text-black">
+            <div class="container p-4">
+                <div class="d-flex justify-content-between">
+                    <div class="">
+                        <h5 class="mb-3">links</h5>
+                        <ul class="d-flex flex-column flex-md-row justify-content-md-between list-unstyled mb-0">
+                            <li class="mb-1">
+                                <a href="#!" class="text-dark">FAQ</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" class="text-dark">Classes</a>
+                            </li>
+                            <li class="mb-1">
+                                <a href="#!" class="text-dark">Pricing</a>
+                            </li>
+                            <li>
+                                <a href="#!" class="text-dark">Safety</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h5 class="mb-1 text-dark">opening hours</h5>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Primeday - Taungsday:</td>
+                                    <td>9:00 - 17:00GST</td>
+                                </tr>
+                                <tr>
+                                    <td>Zhellday - Benduday:</td>
+                                    <td>10:00 - 15:00GST</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </footer>
+            <div class="text-center p-3"">
+              © 2025 Copyright: Crossfire Surplus Yards
+            </div>
+            <!-- Copyright -->
+          </footer>
     </body>
 </html>
