@@ -25,3 +25,5 @@ For task 6 please use id="aside_left" or id="aside_right"
 For task 7 please use id="pit_crew"
 
 For task 8 please use the <footer> tag
+
+GitHub Pages link: https://trippyvaultboy.github.io/
