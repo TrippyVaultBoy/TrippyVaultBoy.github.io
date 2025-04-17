@@ -1,29 +1,78 @@
-Implement a Design with Bootstrap (Max's Version)
+# Holberton Smiling School (Bootstrap Project)
 
-For this project Max said to create a website themed
-around a hobby of mine so of course I chose Star Wars!
+These group of web pages were coded from scratch with the help of the Boostrap Framework and based on some design models given on Figma.
 
-I wanted to create a dealership style website but instead
-of selling cars they would be selling salvaged and rebuilt
-starships from the stra wars universe, Rebel and Imperial 
-alike!
+[Figma Homepage](https://www.figma.com/file/QYQqMYbdpAHL5xTclwJKSI/Homepage)
 
-Section Outline:
+[Figma Pricing](https://www.figma.com/file/KLAI53jdYpfFNEy0O79ymB/Pricing)
 
-For task 1 please use the <header> tag
+[Figma Courses](https://www.figma.com/file/ivg3abH1HLmMayBgjGg1Qf/Courses)
 
-For task 2 please use id="shop_all"
+The designs were planned for Desktop, Tablet, and Mobile.
 
-For task 3 please use id="single_carousel"
+# Homepage
 
-For task 4 please use id="multi_carousel"
+| **Desktop (Width: 1440 px)**                              | **Tablet (Width: 768 px)**                              | **Mobile (Width: 576 px)**                              |
+| --------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------- |
+| ![Desktop](https://i.ibb.co/pKGgC0J/Homepage-Desktop.png) | ![Tablet](https://i.ibb.co/6XBLwf9/Homepage-Tablet.png) | ![Mobile](https://i.ibb.co/NVBK21F/Homepage-Mobile.png) |
 
-For task 5 please use dropdowns in id="shop_all"
+# Pricing
 
-For task 6 please use id="aside_left" or id="aside_right"
+| **Desktop (Width: 1440 px)**                             | **Tablet (Width: 768 px)**                             | **Mobile (Width: 576 px)**                             |
+| -------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
+| ![Desktop](https://i.ibb.co/RvSJ2YS/Pricing-Desktop.png) | ![Tablet](https://i.ibb.co/Gkvsf0Y/Pricing-Tablet.png) | ![Mobile](https://i.ibb.co/6RwmYck/Pricing-Mobile.png) |
 
-For task 7 please use id="pit_crew"
+# Courses
 
-For task 8 please use the <footer> tag
+| **Desktop (Width: 1440 px)**                             | **Tablet (Width: 768 px)**                             | **Mobile (Width: 576 px)**                             |
+| -------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
+| ![Desktop](https://i.ibb.co/y51S3HX/Courses-Desktop.png) | ![Tablet](https://i.ibb.co/28qK1g0/Courses-Tablet.png) | ![Mobile](https://i.ibb.co/f8zNgkx/Courses-Mobile.png) |
 
-GitHub Pages link: https://trippyvaultboy.github.io/
+# Sections
+
+The Holberton Smiling School web pages were developed by sections using the Bootstrap Front-End framework and CSS styles.
+
+## CSS File
+
+[Styles](https://github.com/jzamora5/holberton-smiling-school/blob/master/styles.css)
+
+## Homepage
+
+[Homepage Header/Hero Section](https://github.com/jzamora5/holberton-smiling-school/blob/master/0-homepage.html)
+
+[Carousel of quotes](https://github.com/jzamora5/holberton-smiling-school/blob/master/1-homepage.html)
+
+[Popular Videos](https://github.com/jzamora5/holberton-smiling-school/blob/master/2-homepage.html)
+
+[Row of smiles](https://github.com/jzamora5/holberton-smiling-school/blob/master/3-homepage.html)
+
+[Latest Videos](https://github.com/jzamora5/holberton-smiling-school/blob/master/4-homepage.html)
+
+[Footer](https://github.com/jzamora5/holberton-smiling-school/blob/master/homepage.html)
+
+## Pricing
+
+[Pricing Header](https://github.com/jzamora5/holberton-smiling-school/blob/master/0-pricing.html)
+
+[Prices Grid](https://github.com/jzamora5/holberton-smiling-school/blob/master/1-pricing.html)
+
+[Quotes Section](https://github.com/jzamora5/holberton-smiling-school/blob/master/2-pricing.html)
+
+[FAQ](https://github.com/jzamora5/holberton-smiling-school/blob/master/3-pricing.html)
+
+[Footer](https://github.com/jzamora5/holberton-smiling-school/blob/master/pricing.html)
+
+## Courses
+
+[Courses Header](https://github.com/jzamora5/holberton-smiling-school/blob/master/0-courses.html)
+
+[Search Filters](https://github.com/jzamora5/holberton-smiling-school/blob/master/1-courses.html)
+
+[List of Results](https://github.com/jzamora5/holberton-smiling-school/blob/master/2-courses.html)
+
+[Footer](https://github.com/jzamora5/holberton-smiling-school/blob/master/courses.html)
+
+# Author:
+
+Jhoan Zamora: [jzamora5](https://github.com/jzamora5)
+Tanner Saint: [TrippyVaultBoy](https://github.com/TrippyVaultBoy)
